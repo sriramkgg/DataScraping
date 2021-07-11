@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quadratic Equation Solver</title>
+</head>
+<body>
+
+<p>The general form of a quadratic equation is given below</p>
+<p>ax<sup>2</sup> + bx + c = 0</p>
+<p>Enter values for the coefficients a, b and c in the fields below, and this page will find the roots of the equation</p>
+<p><em>Ensure that the value of a is not zero. If it is zero, it is not a quadratic equation</em></p>
+
+<form action="/main" method="post" enctype="multipart/form-data">
+    Enter the value of coefficient <em>a  </em>
+    <input type="number" step="any" name="a" required><br>
+    Enter the value of coefficient <em>b  </em>
+    <input type="number" step="any" name="b" required><br>
+    Enter the value of coefficient <em>c  </em>
+    <input type="number" step="any" name="c" required><br>
+
+    <button type="submit">Solve Equation</button>
+</form>
+
+<h3>{{ roots }}</h3>
+
+</body>
+</html>
